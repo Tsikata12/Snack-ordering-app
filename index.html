@@ -1,0 +1,94 @@
+  <html lang="en">
+<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat&family=Smythe&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ordering App</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="cover-img">
+                <h1>Jimmy's Dinner</h1>
+                <p>The best burgers and pizzas in town.</p>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="main">
+            <div class="container" id="food-display">
+                <!-- Content Here -->
+                <!-- <div class="food-details">
+                            <img src="images/beer.png">
+                            <div class="food-info">
+                                <h2>Beer</h2>
+                                <h6>grain, hops, yeast, water</h6>
+                                <h4>$12</h4>
+                            </div>
+                            <i class="fa-2xl fa-solid fa-circle-plus"></i>
+                        </div>
+                        <div class="food-details">
+                            <img src="images/hamburger.png">
+                            <div class="food-info">
+                                <h2>Hamburger</h2>
+                                <h6>grain, hops, yeast, water</h6>
+                                <h4>$12</h4>
+                            </div>
+                            <i class="fa-2xl fa-solid fa-circle-plus"></i>
+                        </div>
+                        <div class="food-details">
+                            <img src="images/pizza.png">
+                            <div class="food-info">
+                                <h2>Pizza</h2>
+                                <h6>grain, hops, yeast, water</h6>
+                                <h4>$12</h4>
+                            </div>
+                        <i class="fa-2xl fa-solid fa-circle-plus"></i>
+                        </div> -->
+            </div>
+            <div class="complete">
+                <h2 id="message"></h2>
+            </div>
+            <div id="order" class="order-display">
+                <div id="order-details" class="order-details">
+                    <h2>Your Order</h2>
+                    <div class="order-info">
+                        <h3>Pizza <span class="remove"><i class="fa-solid fa-xmark"></i></span></h3>
+                        <h4>$14</h4>
+                    </div>
+                    <div class="order-info">
+                        <h3>Beer <span class="remove"><i class="fa-solid fa-xmark"></i></span></h3>
+                        <h4>$12</h4>
+                    </div>
+                </div>
+                <div class="total" id="total-info">
+                    <h2>Total Price:</h2>
+                    <h3 id="total">$24</h3>
+                </div>
+                <button data-complete="finish24" class="btn">Complete Order</button>
+            </div> 
+            <div id="payment-display">
+                <div class="container payment">
+                    <form id="form">
+                        <input type="text" id="name" required placeholder="Enter your name">
+                        <input type="number" required placeholder="Enter card number">
+                        <input type="text" required placeholder="Enter CVV">
+                        <button class="btn" data-pay="pay24">Pay</button>
+                    </form>
+                    <h1>Enter Card Details</h1>
+                </div>
+            </div>
+        </section>    
+    </main>
+    <script src="index.js" type="module"></script>
+</body>
+</html>
